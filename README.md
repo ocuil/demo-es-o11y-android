@@ -29,5 +29,5 @@ Antes de ejecutar la aplicación, asegúrate de tener los siguientes componentes
 1. **Clona este repositorio**:
 
    ```bash
-   git clone https://github.com/tu_usuario/todo-list-otel.git
-   cd todo-list-otel
+   git clone git@github.com:ocuil/demo-es-o11y-android.git
+   cd demo-es-o11y-android
