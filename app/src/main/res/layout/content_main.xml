@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativ2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/empty_notes_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empty_notes_view2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="@string/msg_no_notes"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/empty_notes_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="155dp"
+            android:text="@string/what_do_you_want_to_do_today"
+            android:textSize="21sp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

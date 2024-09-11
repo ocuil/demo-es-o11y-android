@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://schemas.android.com/apk/res-auto ">
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-8337023763045237/3357814719">
+
+    </com.google.android.gms.ads.AdView>
+
+    <LinearLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rr"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme" />
+
+            <TextView
+                android:id="@+id/textViewCompleted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Completed"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/TaskView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textViewCompleted"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toEndOf="@+id/textViewCompleted"
+                android:layout_toRightOf="@+id/textViewCompleted"
+                android:background="@drawable/child"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/_0" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textV2"
+        android:layout_centerHorizontal="true"
+        android:text="@string/no_complete_task"
+        android:textColor="?titleColor"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/textV2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="220dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/msg_no_notes2"
+        android:textColor="?titleColor"
+        android:textSize="17sp" />
+
+
+</RelativeLayout>

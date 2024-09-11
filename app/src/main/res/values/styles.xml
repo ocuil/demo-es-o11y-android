@@ -1,0 +1,70 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="titleColorGray">#d2d2d2</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Theme.MyTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="titleColor">#d2d2d2</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="ColorWhite" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="titleColor">#dfdfdf</item>
+    </style>
+    <style name="TimePickerDialogTheme" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:colorPrimary">@color/colorAccent</item>
+        <item name="android:colorPrimaryDark">@color/colorAccent</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:dateTextAppearance">@color/colorAccent</item>
+        <item name="android:panelColorForeground">@color/colorAccent</item>
+        <item name="android:colorControlActivated">@color/colorAccent</item>
+        <item name="android:negativeButtonText">@color/colorAccent</item>
+        <item name="android:positiveButtonText">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar" >
+        <item name="titleColor">#363636</item>
+        <item name="titleColorGray">#a3a3a3</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="MyCheckBoxStyle" parent="Base.Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="buttonTint">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="titleColor">#dfdfdf</item>
+        <item name="grayColor">#dadada</item>
+        <item name="titleColorGray">#687384</item>
+        <item name="colorPrimary">@color/textColo</item>
+        <item name="colorPrimaryDark">@color/darkColorPrimaryDark</item>
+    </style>
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="titleColor">#515151</item>
+        <item name="grayColor">#d2d2d2</item>
+        <item name="titleColorGray">#a3a3a3</item>
+        <item name="backmain">#eff0f4</item>
+    </style>
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+    <style name="AppTheme.Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">#218be7</item>
+        <item name="colorSwitchThumbNormal">#f1f1f1
+        </item>
+        <item name="android:colorForeground">#42221f1f
+        </item>
+    </style>
+    <style name="Theme_Material_Light_NoActionBar" parent="Theme.AppCompat.NoActionBar">
+    </style>
+</resources>

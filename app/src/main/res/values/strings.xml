@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ToDo List</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_title_home">Notes</string>
+    <string name="feedback">Feedback ToDo List</string>
+    <string name="msg_no_notes">You can create new tasks \n using  "+"  button</string>
+    <string name="msg_no_notes2">You can delete completed tasks \n using red button</string>
+    <string name="lbl_new_note_title">New Note</string>
+    <string name="lbl_edit_note_title">Edit Note</string>
+    <string name="hint_enter_note">Enter your note!</string>
+    <string name="my_task">My Task</string>
+    <string name="_15">15</string>
+    <string name="_21_4_2018">21.4.2018</string>
+    <string name="todo">TODO</string>
+    <string name="save_task">Save task</string>
+    <string name="what_do_you_want_to_do_today">What do you want to do today ?</string>
+    <string name="no_complete_task">No Complete Task</string>
+    <string name="_0">0</string>
+</resources>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".view.NewTaskActivity">
+
+
+    <EditText
+        android:id="@+id/EditTextNewTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="65dp"
+        android:backgroundTint="@android:color/transparent"
+        android:gravity="top"
+        android:hint="My Task "
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:nextFocusDown="@+id/editTextNewTask2"
+        android:padding="20dp"
+        android:singleLine="true"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@android:color/darker_gray"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="38sp" />
+
+    <RelativeLayout
+        android:id="@+id/DateLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/podrobnosti"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/DateInIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="11dp"
+            android:layout_weight="1"
+            android:text="15"
+            android:textColor="@android:color/black"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/IconDate"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:background="@drawable/calendars" />
+
+        <TextView
+            android:id="@+id/TextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text="21.4.2018"
+            android:textColor="@color/bf" />
+
+    </RelativeLayout>
+
+
+    <!--  <com.dd.ShadowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+
+        android:background="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
+        app:sl_cornerRadius="51dp"
+        app:sl_dx="0dp"
+        app:sl_dy="4dp"
+        app:sl_shadowColor="#aa2186df"
+        app:sl_shadowRadius="0dp">
+-->
+
+    <Button
+        android:id="@+id/AddButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorAccent"
+        android:stateListAnimator="@null"
+        android:text="Add  Task "
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/podrobnosti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextNewTask"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/editicon" />
+
+        <EditText
+            android:id="@+id/editTextNewTask2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/BackView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:gravity="top"
+            android:hint="Details"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="4"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@android:color/darker_gray"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Add New Task"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/AddButton"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8337023763045237/2614734487">
+
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
+
