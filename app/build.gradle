@@ -20,7 +20,7 @@ android {
         checkReleaseBuilds false
         abortOnError false
     }
-    buildToolsVersion '30.0.2'
+    namespace 'minimal.todo.com.todo'
 }
 
 dependencies {
